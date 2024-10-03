@@ -1,0 +1,31 @@
+{
+    "parent": "ships:advancement/custom_boat/battleship/battleship",
+  "display": {
+    
+      "title": {
+          "text": "Broadside Barrage",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Fire a cannonball from a battleship and show the world who's boss"
+      },
+
+      "icon": {
+          "id": "minecraft:fire_charge"
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

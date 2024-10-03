@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "cannonball": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:miscellaneous/cannonball"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/miscellaneous/give_cannonball"
+    }
+}

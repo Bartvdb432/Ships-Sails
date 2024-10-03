@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " #",
+    "XO"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:furnace"
+    },
+    "X": {
+      "item": "minecraft:iron_block"
+    },
+    "O": {
+      "item": "minecraft:mangrove_boat"
+    }
+  },
+  "result": {
+    "id": "minecraft:knowledge_book"
+  }
+}

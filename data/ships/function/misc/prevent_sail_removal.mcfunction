@@ -1,0 +1,2 @@
+execute as @a if items entity @s player.cursor white_banner[custom_data={custom_sail:1b}] run item replace entity @s player.cursor with air
+execute as @e[type=item] if data entity @s {Item:{components:{"minecraft:custom_data": {custom_sail: 1b}}}} run kill @s

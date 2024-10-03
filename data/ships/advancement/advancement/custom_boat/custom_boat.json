@@ -1,0 +1,31 @@
+{
+    "parent": "ships:advancement/root",
+  "display": {
+    
+      "title": {
+          "text": "All Aboard!",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Craft a custom ship to sail the seas"
+      },
+
+      "icon": {
+          "id": "minecraft:oak_boat"
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

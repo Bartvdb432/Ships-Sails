@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirements": {
+            "trigger": "minecraft:fishing_rod_hooked"
+        }
+    },
+    "rewards": {
+        "function": "ships:misc/fishing"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "__comment": "Made by Bartvdb432",
+    "criteria": {
+        "battleship": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:battleship/bamboo_battleship"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/battleship/give_bamboo_battleship"
+    }
+}

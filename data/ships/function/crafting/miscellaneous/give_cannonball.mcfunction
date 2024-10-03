@@ -1,0 +1,4 @@
+recipe take @s ships:miscellaneous/cannonball
+advancement revoke @s only ships:miscellaneous/cannonball_advancement
+clear @s minecraft:knowledge_book
+give @p player_head[custom_data={cannonball_item:1b},minecraft:custom_name='{"text":"Cannonball","color":"white","italic":false}',profile={id:[I;-639877664,1727545686,-2004029853,-632720288],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI1MjNlMTVlOTk4NjM1NWExZjg1MWY0M2Y3NTBlZTNmMjNjODlhZTEyMzYzMWRhMjQxZjg3MmJhN2E3ODEifX19"}]},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05}]

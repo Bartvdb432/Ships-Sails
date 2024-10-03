@@ -1,0 +1,15 @@
+function ships:misc/mast_rotation
+function ships:misc/anchor
+function ships:misc/chimney
+function ships:misc/ice_breaker
+function ships:misc/lockpick
+function ships:misc/crows_nest
+function ships:misc/disable_projectiles
+function ships:misc/destroy_boat
+function ships:misc/remove_mobs_from_ships
+function ships:misc/change_chimney
+function ships:misc/repair
+function ships:misc/prevent_leashing
+function ships:misc/chest_boat_advancement
+function ships:misc/prevent_sail_removal
+function ships:misc/sink_in_storm

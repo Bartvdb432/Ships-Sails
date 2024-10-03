@@ -1,0 +1,46 @@
+{
+    "display": {
+  
+        "title": {
+  
+            "text": "Ships&Sails",
+            "color": "white",
+            "obfuscated": false
+  
+        },
+  
+        "description": {
+  
+            "text": "Sail the seas with custom ships!"
+  
+        },
+  
+        "icon": {
+  
+            "id": "minecraft:oak_boat"
+  
+        },
+  
+        "frame": "task",
+  
+        "show_toast": true,
+  
+        "announce_to_chat": true,
+  
+        "hidden": false,
+  
+        "background": "minecraft:textures/gui/advancements/backgrounds/water.png"
+  
+    },
+  
+    "criteria": {
+  
+        "c1": {
+  
+            "trigger": "minecraft:impossible"
+  
+        }
+  
+    }
+  
+  }

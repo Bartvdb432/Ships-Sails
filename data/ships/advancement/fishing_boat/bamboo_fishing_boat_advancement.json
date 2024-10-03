@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "fishing_boat": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:fishing_boat/bamboo_fishing_boat"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/fishing_boat/give_bamboo_fishing_boat"
+    }
+}

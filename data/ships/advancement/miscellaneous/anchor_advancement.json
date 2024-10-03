@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "anchor": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:miscellaneous/anchor"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/miscellaneous/give_anchor"
+    }
+}

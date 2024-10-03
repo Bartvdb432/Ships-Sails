@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/fishing_boat/fishing_boat",
+  "display": {
+    
+      "title": {
+          "text": "Reeling It In",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Catch fish using a fishing boat"
+      },
+
+      "icon": {
+          "id": "minecraft:cod"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

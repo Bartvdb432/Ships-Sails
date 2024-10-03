@@ -1,0 +1,14 @@
+{
+    "__comment": "Made by Bartvdb432",
+    "criteria": {
+        "fishing_boat": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:fishing_boat/birch_fishing_boat"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/fishing_boat/give_birch_fishing_boat"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/custom_boat",
+  "display": {
+    
+      "title": {
+          "text": "Breaking the Ice",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Craft an ice breaker"
+      },
+
+      "icon": {
+          "id": "minecraft:furnace"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

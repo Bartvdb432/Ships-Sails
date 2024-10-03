@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+      "#X",
+      " O"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:fishing_rod"
+      },
+      "X": {
+        "tag": "minecraft:banners",
+        "data": 15
+      },
+      "O": {
+        "item": "minecraft:jungle_boat"
+      }
+    },
+    "result": {
+      "id": "minecraft:knowledge_book"
+    }
+  }

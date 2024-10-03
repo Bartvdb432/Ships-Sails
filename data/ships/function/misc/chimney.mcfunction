@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=chimney,scores={id=1..}] at @s run particle large_smoke ^ ^2.2 ^-0.6 0 0 0 0.02 5

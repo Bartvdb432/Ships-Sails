@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/ice_breaker/ice_breaker",
+  "display": {
+    
+      "title": {
+          "text": "Clearing the Way",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Use an ice breaker to travel through ice"
+      },
+
+      "icon": {
+          "id": "minecraft:ice"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

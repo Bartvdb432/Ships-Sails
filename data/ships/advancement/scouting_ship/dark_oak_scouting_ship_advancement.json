@@ -1,0 +1,14 @@
+{
+    "__comment": "Made by Bartvdb432",
+    "criteria": {
+        "scouting_ship": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:scouting_ship/dark_oak_scouting_ship"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/scouting_ship/give_dark_oak_scouting_ship"
+    }
+}

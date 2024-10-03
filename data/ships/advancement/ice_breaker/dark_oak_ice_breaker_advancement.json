@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "ice_breaker": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:ice_breaker/dark_oak_ice_breaker"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/ice_breaker/give_dark_oak_ice_breaker"
+    }
+}

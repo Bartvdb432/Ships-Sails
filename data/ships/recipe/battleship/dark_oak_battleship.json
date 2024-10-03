@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+      "#X#",
+      " O "
+    ],
+    "key": {
+      "#": {
+        "tag": "minecraft:banners",
+        "data": 15
+      },
+      "X": {
+        "item": "minecraft:player_head",
+        "data": 3
+      },
+      "O": {
+        "item": "minecraft:dark_oak_boat"
+      }
+    },
+    "result": {
+      "id": "minecraft:knowledge_book"
+    }
+  }

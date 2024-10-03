@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "battleship": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:battleship/acacia_battleship"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/battleship/give_acacia_battleship"
+    }
+}

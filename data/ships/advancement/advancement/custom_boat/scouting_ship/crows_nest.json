@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/scouting_ship/scouting_ship",
+  "display": {
+    
+      "title": {
+          "text": "Eyes on the Horizon",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Climb to the crow’s nest of a scouting ship to get a bird's-eye view of the seas!"
+      },
+
+      "icon": {
+          "id": "minecraft:composter"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

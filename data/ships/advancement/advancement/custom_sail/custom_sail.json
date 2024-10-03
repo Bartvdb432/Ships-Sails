@@ -1,0 +1,49 @@
+{
+    "parent": "ships:advancement/root",
+  "display": {
+
+      "title": {
+
+          "text": "Let's Set Sail!",
+
+          "color": "white",
+
+          "obfuscated": false
+
+      },
+
+      "description": {
+
+          "text": "Use /trigger sail to apply a custom sail to your ships"
+
+      },
+
+      "icon": {
+
+          "id": "minecraft:red_banner"
+
+      },
+
+      "frame": "task",
+
+      "show_toast": true,
+
+      "announce_to_chat": true,
+
+      "hidden": false,
+
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+
+  },
+
+  "criteria": {
+
+      "c1": {
+
+          "trigger": "minecraft:impossible"
+
+      }
+
+  }
+
+}

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "naval_guide": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:miscellaneous/naval_guide"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/miscellaneous/give_naval_guide"
+    }
+}

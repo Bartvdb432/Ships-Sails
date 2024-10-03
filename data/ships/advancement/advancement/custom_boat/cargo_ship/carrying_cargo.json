@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/cargo_ship/cargo_ship",
+  "display": {
+    
+      "title": {
+          "text": "Carrying Cargo",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Use a cargo ship to transport your stuff"
+      },
+
+      "icon": {
+          "id": "minecraft:oak_chest_boat"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

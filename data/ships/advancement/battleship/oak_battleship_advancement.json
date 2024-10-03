@@ -1,0 +1,14 @@
+{
+    "__comment": "Made by Bartvdb432",
+    "criteria": {
+        "battleship": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:battleship/oak_battleship"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/battleship/give_oak_battleship"
+    }
+}

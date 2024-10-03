@@ -1,0 +1,63 @@
+{
+  "parent": "ships:advancement/custom_boat/custom_boat",
+    "display": {
+  
+        "title": {
+  
+            "text": "Drop Anchor!",
+  
+            "color": "white",
+  
+            "obfuscated": false
+  
+        },
+  
+        "description": {
+  
+            "text": "Use /trigger anchor to claim a ship"
+  
+        },
+  
+        "icon": {
+  
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                  "id": [
+                    -1197051055,
+                    -942059745,
+                    -1412592671,
+                    1605317911
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjkyZDVkZjgwNWMyMzkwMjJmZTFiNDVmOTQwODgyYmY0MGI1NTk2NzE5MzdkYzcxZmJjOTZmNjMwMjUwZWJjNCJ9fX0"
+                    }
+                  ]
+                }
+            }
+  
+        },
+  
+        "frame": "task",
+  
+        "show_toast": true,
+  
+        "announce_to_chat": true,
+  
+        "hidden": false
+  
+    },
+  
+    "criteria": {
+  
+        "c1": {
+  
+            "trigger": "minecraft:impossible"
+  
+        }
+  
+    }
+  
+  }

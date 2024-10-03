@@ -1,0 +1,14 @@
+{
+    "__comment": "Made by Bartvdb432",
+    "criteria": {
+        "cargo_ship": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ships:cargo_ship/cherry_cargo_ship"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ships:crafting/cargo_ship/give_cherry_cargo_ship"
+    }
+}

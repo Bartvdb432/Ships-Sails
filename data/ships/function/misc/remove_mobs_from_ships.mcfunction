@@ -1,0 +1,2 @@
+execute as @e[type=boat,tag=custom_boat] on passengers if entity @s[type=!player,nbt={HurtTime:9s},tag=!mast,tag=!chimney] run ride @s dismount
+execute as @e[type=chest_boat,tag=custom_boat] on passengers if entity @s[type=!player,nbt={HurtTime:9s},tag=!mast,tag=!chimney] run ride @s dismount

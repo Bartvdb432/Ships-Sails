@@ -1,0 +1,32 @@
+{
+    "parent": "ships:advancement/custom_boat/custom_boat",
+  "display": {
+    
+      "title": {
+          "text": "Land ahoy!",
+          "color": "white",
+          "obfuscated": false
+      },
+
+      "description": {
+          "text": "Craft a scouting ship"
+      },
+
+      "icon": {
+          "id": "minecraft:spyglass"
+
+      },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/blue_ice.png"
+  },
+
+  "criteria": {
+      "c1": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

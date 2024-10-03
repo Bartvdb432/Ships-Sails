@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:book"
+      },
+      {
+        "tag": "minecraft:boats",
+        "data": 0
+      }
+    ],
+    "result": {
+      "id": "minecraft:knowledge_book"
+    }
+  }

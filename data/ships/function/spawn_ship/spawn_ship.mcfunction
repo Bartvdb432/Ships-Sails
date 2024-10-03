@@ -1,0 +1,5 @@
+function ships:spawn_ship/battleship
+function ships:spawn_ship/cargo_ship
+function ships:spawn_ship/fishing_boat
+function ships:spawn_ship/scouting_ship
+function ships:spawn_ship/ice_breaker
