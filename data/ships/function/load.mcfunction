@@ -13,8 +13,8 @@ scoreboard objectives add holding_banner dummy "Holding Banner"
 
 scoreboard objectives add fired_cannonball minecraft.used:minecraft.player_head "Fired Cannonball"
 scoreboard objectives add cannonball_cooldown dummy "Cannonball Cooldown"
-
 scoreboard players set @a cannonball_cooldown 1
+
 scoreboard objectives add cannonball_motion_x1 dummy
 scoreboard objectives add cannonball_motion_y1 dummy
 scoreboard objectives add cannonball_motion_z1 dummy

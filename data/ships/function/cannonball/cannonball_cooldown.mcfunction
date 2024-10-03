@@ -1,3 +1,5 @@
+execute as @a unless score @s cannonball_cooldown = @s cannonball_cooldown run scoreboard players set @s cannonball_cooldown 0
+
 execute as @a[scores={cannonball_cooldown=1..},nbt={SelectedItem:{id:"minecraft:player_head",components:{"minecraft:custom_data":{cannonball_item:1b}}}}] run item modify entity @s weapon.mainhand ships:cannonball_non_food
 execute as @e[type=boat,tag=battleship] on passengers if entity @s[scores={cannonball_cooldown=..0},nbt={SelectedItem:{id:"minecraft:player_head",components:{"minecraft:custom_data":{cannonball_item:1b}}}}] run item modify entity @s weapon.mainhand ships:cannonball_food
 
