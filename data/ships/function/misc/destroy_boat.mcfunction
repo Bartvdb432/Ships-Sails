@@ -6,28 +6,28 @@ tag @e[type=chest_boat,tag=!occupied_boat] add empty_boat
 
 tag @e remove occupied_boat
 
-execute as @e[type=item,nbt={Item:{id:"minecraft:wooden_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:wooden_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
-execute as @e[type=item,nbt={Item:{id:"minecraft:stone_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:stone_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
-execute as @e[type=item,nbt={Item:{id:"minecraft:iron_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:iron_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
-execute as @e[type=item,nbt={Item:{id:"minecraft:golden_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:golden_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
-execute as @e[type=item,nbt={Item:{id:"minecraft:diamond_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:diamond_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
-execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_axe"}}] at @s unless score @s id = @s id run tag @s add axe
-execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_axe"}}] at @s unless score @s id = @s id run scoreboard players operation @s id = @p id
+execute as @e[type=item,nbt={Item:{id:"minecraft:wooden_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:wooden_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
+execute as @e[type=item,nbt={Item:{id:"minecraft:stone_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:stone_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
+execute as @e[type=item,nbt={Item:{id:"minecraft:iron_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:iron_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
+execute as @e[type=item,nbt={Item:{id:"minecraft:golden_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:golden_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
+execute as @e[type=item,nbt={Item:{id:"minecraft:diamond_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:diamond_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
+execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_axe"}}] at @s unless score @s ship_id = @s ship_id run tag @s add axe
+execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_axe"}}] at @s unless score @s ship_id = @s ship_id run scoreboard players operation @s ship_id = @p ship_id
 
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] id on passengers run kill @s[type=armor_stand,tag=mast]
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] id on passengers run kill @s[type=armor_stand,tag=chimney]
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] unless score @s anchor_id = @s anchor_id on passengers run kill @s[type=armor_stand,tag=mast]
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] unless score @s anchor_id = @s anchor_id on passengers run kill @s[type=armor_stand,tag=chimney]
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] ship_id on passengers run kill @s[type=armor_stand,tag=mast]
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] ship_id on passengers run kill @s[type=armor_stand,tag=chimney]
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] unless score @s anchor_id = @s anchor_id on passengers run kill @s[type=armor_stand,tag=mast]
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] unless score @s anchor_id = @s anchor_id on passengers run kill @s[type=armor_stand,tag=chimney]
 
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] id run tag @s add killed_boat
-execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] unless score @s anchor_id = @s anchor_id run tag @s add killed_boat
-execute as @e[type=chest_boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] id run tag @s add killed_boat
-execute as @e[type=chest_boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={id=1..}] unless score @s anchor_id = @s anchor_id run tag @s add killed_boat
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] ship_id run tag @s add killed_boat
+execute as @e[type=boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] unless score @s anchor_id = @s anchor_id run tag @s add killed_boat
+execute as @e[type=chest_boat,tag=custom_boat,tag=empty_boat] at @s if score @s anchor_id = @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] ship_id run tag @s add killed_boat
+execute as @e[type=chest_boat,tag=custom_boat,tag=empty_boat] at @s if entity @e[type=item,tag=axe,limit=1,sort=nearest,distance=..1, scores={ship_id=1..}] unless score @s anchor_id = @s anchor_id run tag @s add killed_boat
 
 execute as @e[type=item,tag=axe] if entity @e[tag=killed_boat,sort=nearest,limit=1] run scoreboard players set @s id 0
 

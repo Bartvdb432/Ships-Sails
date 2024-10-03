@@ -1,9 +1,9 @@
 # damage to custom boats
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=battleship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run scoreboard players add @s damage 4
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=fishing_boat] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run scoreboard players add @s damage 12
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=scouting_ship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run scoreboard players add @s damage 6
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1,tag=cargo_ship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run scoreboard players add @s damage 8
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=ice_breaker] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run scoreboard players add @s damage 6
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=battleship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run scoreboard players add @s damage 4
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=fishing_boat] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run scoreboard players add @s damage 12
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=scouting_ship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run scoreboard players add @s damage 6
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1,tag=cargo_ship] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run scoreboard players add @s damage 8
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1,tag=ice_breaker] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run scoreboard players add @s damage 6
 
 # sink ship
 execute as @e[type=boat,scores={damage=24..},tag=!sunk] at @s on controller run teleport @s ~ ~ ~
@@ -18,8 +18,8 @@ execute as @e[type=boat,tag=custom_boat] at @s unless block ~ ~1 ~ #air run tag 
 execute as @e[type=chest_boat,tag=custom_boat] at @s unless block ~ ~1 ~ #air run tag @s add sunk
 execute as @e[type=boat,tag=custom_boat,tag=sunk] on passengers if entity @s[type=armor_stand] run kill @s
 
-execute as @e[type=item,tag=cannonball,tag=!damaged] at @s if entity @e[type=boat,tag=custom_boat,tag=sunk,sort=nearest,limit=1] run scoreboard players operation @e[type=boat,tag=custom_boat,tag=sunk,sort=nearest,limit=1] sunk_id = @s id
-execute as @a at @s as @e[type=boat,tag=sunk] if score @s sunk_id = @p id run advancement grant @p only ships:advancement/custom_boat/battleship/sunk
+execute as @e[type=item,tag=cannonball,tag=!damaged] at @s if entity @e[type=boat,tag=custom_boat,tag=sunk,sort=nearest,limit=1] run scoreboard players operation @e[type=boat,tag=custom_boat,tag=sunk,sort=nearest,limit=1] sunk_id = @s ship_id
+execute as @a at @s as @e[type=boat,tag=sunk] if score @s sunk_id = @p ship_id run advancement grant @p only ships:advancement/custom_boat/battleship/sunk
 
 
 tag @e[type=boat,scores={damage=24..}, tag=!sunk] add sunk
@@ -30,15 +30,15 @@ execute as @e[type=chest_boat,scores={damage=24..}, tag=sunk] at @s run tag @e[t
 execute as @e[type=boat,tag=sunk] if block ~ ~1 ~ #air at @s run particle minecraft:dripping_water ~ ~-0.1 ~ 0.35 0 0.35 0 2
 execute as @e[type=chest_boat,tag=sunk] if block ~ ~1 ~ #air at @s run particle minecraft:dripping_water ~ ~-0.1 ~ 0.35 0 0.35 0 2
 
-execute as @e[tag=cannonball] at @s run execute as @e[type=!item,tag=!battleship,tag=!fishing_boat,tag=!scouting_ship,tag=!cargo_ship,tag=!ice_breaker,tag=!mast,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run damage @s 10 minecraft:generic
-execute as @e[tag=cannonball] at @s run execute as @e[type=boat,tag=,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run kill @s
-execute as @e[tag=cannonball] at @s run execute as @e[type=chest_boat,tag=,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run kill @s
+execute as @e[tag=cannonball] at @s run execute as @e[type=!item,tag=!battleship,tag=!fishing_boat,tag=!scouting_ship,tag=!cargo_ship,tag=!ice_breaker,tag=!mast,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run damage @s 10 minecraft:generic
+execute as @e[tag=cannonball] at @s run execute as @e[type=boat,tag=,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run kill @s
+execute as @e[tag=cannonball] at @s run execute as @e[type=chest_boat,tag=,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run kill @s
 execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1] run particle explosion ~ ~ ~
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run playsound entity.generic.explode hostile @a ~ ~ ~ 2 1
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run tag @e[tag=cannonball,sort=nearest,limit=1,tag=!damaged] add damaged
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run playsound entity.generic.explode hostile @a ~ ~ ~ 2 1
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run tag @e[tag=cannonball,sort=nearest,limit=1,tag=!damaged] add damaged
 execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1] run particle explosion ~ ~ ~
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run tag @e[tag=cannonball,sort=nearest,limit=1,tag=!damaged] add damaged
-execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] id = @s id run playsound entity.generic.explode hostile @a ~ ~ ~ 2 1
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run tag @e[tag=cannonball,sort=nearest,limit=1,tag=!damaged] add damaged
+execute as @e[tag=cannonball,tag=!damaged] at @s run execute as @e[type=chest_boat,distance=..1.5,limit=1] unless score @e[tag=cannonball,tag=!damaged,sort=nearest,limit=1] ship_id = @s ship_id run playsound entity.generic.explode hostile @a ~ ~ ~ 2 1
 
 kill @e[type=item,tag=cannonball,tag=damaged]
 

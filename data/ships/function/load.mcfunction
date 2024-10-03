@@ -3,7 +3,7 @@ tellraw @a ["Thanks for installing ",{"text":"Ships","bold":true,"color":"#b89b6
 
 
 # scoreboards
-scoreboard objectives add id dummy "ID"
+scoreboard objectives add ship_id dummy "ID"
 scoreboard objectives add anchor_id dummy "Anchor ID"
 
 scoreboard objectives add sail trigger "Sail"
